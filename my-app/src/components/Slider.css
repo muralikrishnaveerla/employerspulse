@@ -1,0 +1,85 @@
+.hero-slider {
+  height: 100vh;
+}
+
+.hero-slide {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: #fff;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.hero-btn {
+  background: #7ac142;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+}
+/* Common arrow style */
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 22px;
+  color: #000;
+  z-index: 10;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Left */
+.custom-prev {
+  left: 20px;
+}
+
+/* Right */
+.custom-next {
+  right: 20px;
+}
+
+/* Hover */
+.custom-prev:hover,
+.custom-next:hover {
+  background: #7ac142;
+  color: #fff;
+}
